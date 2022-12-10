@@ -15,7 +15,7 @@ const Table = () => {
 
 
     // Fetching data from hard coded JSON
-    const {} = useQuery({
+    const { } = useQuery({
         queryKey: ['repoData'],
         queryFn: () =>
             fetch('MOCK_DATA.json').then(res =>
@@ -58,27 +58,28 @@ const Table = () => {
 
 
     // Status Checking function for changing the color green and red
-    const colorChangeHandler = (event,status) => {
-        
+    const colorChangeHandler = (event, status) => {
 
-        if(status)
-        {
+
+        if (status) {
             event.target.parentNode.style.color = 'green';
             event.target.parentNode.style.backgroundColor = 'green';
 
+
+
         }
 
-        else
-        {
+        else {
             event.target.parentNode.style.color = 'red';
+            event.target.parentNode.style.backgroundColor = 'ren';
 
         }
 
 
-       
-       
-       
-    
+
+
+
+
     }
 
 
@@ -123,7 +124,7 @@ const Table = () => {
 
 
 
-                    <TableRow data={persons}   colorChangeHandler={colorChangeHandler}  ></TableRow>
+                    <TableRow data={persons} colorChangeHandler={colorChangeHandler}  ></TableRow>
 
                 </tbody>
 
