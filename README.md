@@ -11,3 +11,5 @@ https://chefkart-a3df8.web.app
 npm i @tanstack/react-query
 
 
+
+### Data will be sorted by Ascending and Descending

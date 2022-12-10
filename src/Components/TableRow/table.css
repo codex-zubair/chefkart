@@ -1,0 +1,6 @@
+.tableHover :hover {
+    color: black;
+    background-color: rgb(233, 233, 242);
+    cursor: pointer;
+  }
+
